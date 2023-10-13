@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useMemo } from 'react'
 import { useEffect, useState } from 'react'
+import { SourceLink } from './SourceLink'
 
 export const Example9 = (): JSX.Element | null => {
 
@@ -18,9 +19,11 @@ export const Example9 = (): JSX.Element | null => {
                 `}
             </div>
 
-            <div style={{ padding: '10px' }}>
+            <div style={{ padding: '10px', flexGrow: '1' }}>
                 <Parent />
             </div>
+
+            <SourceLink href={"Example9"} />
         </>
     )
 }

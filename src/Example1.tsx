@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { SourceLink } from './SourceLink'
 
 export const Example1 = (): JSX.Element | null => {
 
@@ -12,9 +13,11 @@ export const Example1 = (): JSX.Element | null => {
                 {'Default case, renders cascade down the tree'}
             </div>
 
-            <div style={{ padding: '10px' }}>
+            <div style={{ padding: '10px', flexGrow: '1' }}>
                 <Parent />
             </div>
+
+            <SourceLink href="Example1" />
         </>
     )
 }

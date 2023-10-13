@@ -115,7 +115,9 @@ export const Container = (): JSX.Element | null => {
 
                 <div style={{
                     width: '75%',
-                    border: '1px solid black'
+                    border: '1px solid black',
+                    display: 'flex',
+                    flexDirection: 'column'
                 }}>
                     {state.views[state.currentView].component}
                 </div>

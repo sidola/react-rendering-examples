@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import { SourceLink } from './SourceLink'
 
 export const Example2 = (): JSX.Element | null => {
 
@@ -13,9 +14,11 @@ export const Example2 = (): JSX.Element | null => {
                 {'Here, the Child component is wrapped in React.memo and will not update.'}
             </div>
 
-            <div style={{ padding: '10px' }}>
+            <div style={{ padding: '10px', flexGrow: '1' }}>
                 <Parent />
             </div>
+
+            <SourceLink href={"Example2"} />
         </>
     )
 }
